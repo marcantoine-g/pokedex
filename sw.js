@@ -28,5 +28,5 @@ workbox.precaching.cleanupOutdatedCaches()
 // --------------------------------------------------
 
 // Register route handlers for runtimeCaching
-workbox.routing.registerRoute(new RegExp('/pokedex/_nuxt/'), new workbox.strategies.CacheFirst ({}), 'GET')
-workbox.routing.registerRoute(new RegExp('/pokedex/'), new workbox.strategies.NetworkFirst ({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/pokedex-vue/_nuxt/'), new workbox.strategies.CacheFirst ({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/pokedex-vue/'), new workbox.strategies.NetworkFirst ({}), 'GET')
