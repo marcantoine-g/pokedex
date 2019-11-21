@@ -1,6 +1,7 @@
-# pokedex
+# POKEDEX
 
 > Mon Pokédex en Ligne !
+> Ce Pokédex a été réalisé en VueJS avec NuxtJS, et est basé dur l'API : https://pokeapi.co/
 
 ## Build Setup
 
@@ -19,4 +20,3 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
