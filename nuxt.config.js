@@ -1,12 +1,5 @@
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/pokedex/'
-  }
-} : {}
 
 export default {
-  ...routerBase,
   mode: 'universal',
   /*
   ** Headers of the page
@@ -58,5 +51,7 @@ export default {
     extend (config, ctx) {
     }
   },
-
+  router: {
+    base: '/pokedex/'
+  }
 }
