@@ -132,7 +132,7 @@ export async function setContext (app, context) {
 
       payload: context.payload,
       error: context.error,
-      base: '/<nom-du-depot>/',
+      base: '/pokedex-vue/',
       env: {}
     }
     // Only set once

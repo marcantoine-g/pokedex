@@ -5,8 +5,8 @@ async function register() {
 
   const { Workbox } = await import('workbox-cdn/workbox/workbox-window.prod.es5.mjs')
 
-  const workbox = new Workbox('/<nom-du-depot>/sw.js', {
-    scope: '/<nom-du-depot>/'
+  const workbox = new Workbox('/pokedex-vue/sw.js', {
+    scope: '/pokedex-vue/'
   })
 
   await workbox.register()

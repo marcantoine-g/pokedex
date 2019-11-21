@@ -3,20 +3,20 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _42ff071a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _68e61514 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: decodeURI('/<nom-du-depot>/'),
+  base: decodeURI('/pokedex-vue/'),
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
 
   routes: [{
     path: "/",
-    component: _42ff071a,
+    component: _68e61514,
     name: "index"
   }],
 

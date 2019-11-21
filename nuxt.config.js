@@ -1,13 +1,3 @@
-// ajouter seulement `router.base = '/<nom-du-depot>/'` si `DEPLOY_ENV` est `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-<<<<<<< Updated upstream
-    base: '/<nom-du-depot>/'
-=======
-    base: '/pokedex/'
->>>>>>> Stashed changes
-  }
-} : {}
 
 export default {
   mode: 'universal',
@@ -61,5 +51,5 @@ export default {
     extend (config, ctx) {
     }
   },
-  ...routerBase
+  router: { base: '/pokedex-vue/' }
 }

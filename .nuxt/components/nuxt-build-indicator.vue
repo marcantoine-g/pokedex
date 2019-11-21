@@ -77,7 +77,7 @@ export default {
         return
       }
       this._connecting = true
-      this.sse = new EventSource('/<nom-du-depot>/_loading/sse')
+      this.sse = new EventSource('/pokedex-vue/_loading/sse')
       this.sse.addEventListener('message', event => this.onSseMessage(event))
     },
     onSseMessage (message) {
